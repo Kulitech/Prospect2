@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:padding="16dp"
+        android:orientation="vertical"
+        android:background="@drawable/tarefa_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+                android:text="@string/p"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:background="@drawable/rounded_view"
+                android:gravity="center"
+                android:layout_marginEnd="15dp"
+                android:textSize="30sp"
+                android:id="@+id/txtTaskTipo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_gravity="center"
+                android:text="@string/nome"
+                android:textAllCaps="true"
+                android:id="@+id/txtTaskCliente"/>
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:id="@+id/txtClienteEData"
+                android:textSize="18sp"
+                android:gravity="end"
+                android:layout_marginTop="10dp"
+                android:text="@string/date_sample"/>
+
+        <CheckedTextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:drawableStart="@drawable/checked"
+                android:drawablePadding="10dp"
+                android:id="@+id/txtConfirmadoTarefa"
+                android:textSize="15sp"
+                android:textAllCaps="true"
+                android:layout_marginTop="18dp"
+                android:text="@string/autorizado"/>
+
+        <CheckedTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:drawableStart="@drawable/checked"
+                android:drawablePadding="10dp"
+                android:id="@+id/txtAgendadoTarefa"
+                android:textSize="15sp"
+                android:textAllCaps="true"
+                android:text="@string/compromisso_agendado"/>
+
+
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtTel1Tarefa"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:layout_marginTop="18dp"
+                    android:textColor="@color/white"
+                    android:autoLink="phone"
+                    android:text="0527646664"/>
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtTel2Tarefa"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:autoLink="phone"
+                    android:textColor="@color/white"
+                    android:text="0556698244"/>
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtTel3Tarefa"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:autoLink="phone"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/white"
+                    android:text="6241217"/>
+
+
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtBorderoTarefa"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textAllCaps="true"
+                android:layout_marginTop="18dp"
+                android:text="@string/ultimo_bordero"/>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:id="@+id/txtEnderecoTarefa"
+                android:lines="2"
+                android:drawableEnd="@drawable/ic_waze"
+                android:drawablePadding="15dp"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"
+                android:textAllCaps="true"
+                android:text="@string/endereco"/>
+
+        <TextView
+                android:id="@+id/txtObsTarefa"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:lines="8"
+                android:textAllCaps="true"
+                android:text="@string/obs"
+                android:padding="8dp"
+                android:gravity="top"/>
+
+    </LinearLayout>
+</LinearLayout>

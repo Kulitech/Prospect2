@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+<LinearLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:padding="16dp"
+        android:layout_margin="4dp"
+        android:orientation="vertical"
+        android:background="@drawable/tarefa_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+                android:text="@string/p"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:background="@drawable/rounded_view"
+                android:gravity="center"
+                android:layout_marginEnd="15dp"
+                android:textSize="30sp"
+                android:id="@+id/txtRelatorioTipo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_gravity="center"
+                android:text="@string/nome"
+                android:textAllCaps="true"
+                android:id="@+id/txtRelatorioCliente"/>
+    </LinearLayout>
+
+    <EditText
+            android:id="@+id/etRelatorioContato"
+            android:inputType="textLongMessage"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="2"
+            android:hint="@string/contato"
+            android:textColorHint="@color/white"
+            android:padding="8dp"
+            android:textSize="15sp"
+            android:textAllCaps="true"
+            android:gravity="top" tools:ignore="Autofill"/>
+
+    <EditText
+            android:id="@+id/etRelatorioCargo"
+            android:inputType="textLongMessage"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="2"
+            android:hint="@string/cargo"
+            android:textColorHint="@color/white"
+            android:padding="8dp"
+            android:textSize="15sp"
+            android:textAllCaps="true"
+            android:gravity="top" tools:ignore="Autofill"/>
+
+    <LinearLayout
+            android:layout_marginTop="6dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <CheckBox
+                android:layout_weight="1"
+                android:text="@string/presencial"
+                android:textAllCaps="true"
+                android:buttonTint="@color/white"
+                android:textSize="13sp"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cbRelatPresencial"/>
+
+        <CheckBox
+                android:layout_weight="1"
+                android:text="@string/cadastro"
+                android:textAllCaps="true"
+                android:buttonTint="@color/white"
+                android:textSize="13sp"
+                android:textColor="@color/white"
+                android:id="@+id/cbRelatCadastro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <CheckBox
+                android:layout_weight="1"
+                android:text="@string/nao_atende"
+                android:textAllCaps="true"
+                android:buttonTint="@color/white"
+                android:textSize="13sp"
+                android:textColor="@color/white"
+                android:id="@+id/cbRelatNaoAtende"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        <CheckBox
+                android:layout_weight="1"
+                android:id="@+id/cbRelatRestricao"
+                android:textAllCaps="true"
+                android:buttonTint="@color/white"
+                android:textSize="13sp"
+                android:textColor="@color/white"
+                android:text="@string/restricao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <CheckBox
+                android:layout_weight="1"
+                android:text="@string/sem_interesse"
+                android:textAllCaps="true"
+                android:buttonTint="@color/white"
+                android:textSize="13sp"
+                android:textColor="@color/white"
+                android:id="@+id/cbRelatSemInteresse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        <CheckBox
+                android:layout_weight="1"
+                android:textAllCaps="true"
+                android:buttonTint="@color/white"
+                android:textSize="13sp"
+                android:textColor="@color/white"
+                android:id="@+id/cbRelatReagendar"
+                android:text="@string/reagendar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_marginTop="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/reagendar"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textAllCaps="true"
+                android:padding="4dp"
+                android:layout_marginEnd="15dp"/>
+        <TextView
+                android:padding="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_border_line"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:hint="@string/dd_mm_yyyy"
+                android:id="@+id/txtRelatorioReagendar"
+                android:textSize="16sp"
+                android:drawableEnd="@drawable/ic_calendar_24"
+                android:drawablePadding="10dp"/>
+    </LinearLayout>
+
+    <EditText
+            android:id="@+id/etRelatorioObs"
+            android:inputType="textLongMessage"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="2"
+            android:hint="@string/obs"
+            android:textColorHint="@color/white"
+            android:padding="8dp"
+            android:textSize="15sp"
+            android:textAllCaps="true"
+            android:gravity="top" tools:ignore="Autofill"/>
+
+
+
+
+    <com.google.android.material.button.MaterialButton
+            android:layout_marginBottom="400dp"
+            android:layout_marginTop="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/enviar_relatorio"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:layout_gravity="center_horizontal"
+            app:cornerRadius="100dp"
+            android:textColor="@color/white"
+            android:id="@+id/btnAddRelatorio"
+    />
+
+</LinearLayout>
+</ScrollView>

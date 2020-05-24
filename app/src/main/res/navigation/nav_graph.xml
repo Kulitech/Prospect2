@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/nav_graph"
+            app:startDestination="@id/calendarFragment">
+
+    <fragment android:id="@+id/calendarFragment" android:name="com.rkulikowsky.prospect.ui.fragments.CalendarFragment"
+              android:label="fragment_calendar" tools:layout="@layout/fragment_calendar">
+        <action android:id="@+id/next_action" app:destination="@id/tarefaFragment"/>
+        <action android:id="@+id/make_relatorio"
+                app:destination="@id/makeRelatorioFragment" app:enterAnim="@anim/nav_default_enter_anim"
+                app:exitAnim="@anim/nav_default_exit_anim" app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+                app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+        <action android:id="@+id/action_calendarFragment_to_newTaskFragment" app:destination="@id/newTaskFragment"/>
+    </fragment>
+    <fragment android:id="@+id/clienteFragment" android:name="com.rkulikowsky.prospect.ui.fragments.ClienteFragment"
+              android:label="fragment_cliente" tools:layout="@layout/fragment_cliente"/>
+    <fragment android:id="@+id/tarefaFragment" android:name="com.rkulikowsky.prospect.ui.fragments.TarefaFragment"
+              android:label="fragment_tarefa">
+        <argument android:name="task" app:argType="com.rkulikowsky.prospect.data.entity.TarefaRoom"/>
+    </fragment>
+    <fragment android:id="@+id/makeRelatorioFragment" android:name="com.rkulikowsky.prospect.ui.fragments.MakeRelatorioFragment"
+              android:label="fragment_make_relatorio" tools:layout="@layout/fragment_make_relatorio">
+        <argument android:name="task" app:argType="com.rkulikowsky.prospect.data.entity.TarefaRoom"/>
+    </fragment>
+    <fragment android:id="@+id/newTaskFragment" android:name="com.rkulikowsky.prospect.ui.fragments.NewTaskFragment"
+              android:label="fragment_new_task" tools:layout="@layout/fragment_new_task"/>
+    <fragment android:id="@+id/addClientFragment" android:name="com.rkulikowsky.prospect.ui.fragments.AddClientFragment"
+              android:label="fragment_add_client" tools:layout="@layout/fragment_add_client"/>
+</navigation>

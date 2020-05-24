@@ -1,0 +1,56 @@
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_margin="16dp">
+
+
+    <ImageView
+            android:layout_weight="1"
+            android:padding="30dp"
+            android:contentDescription="@string/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo"
+            android:id="@+id/ivLogo"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+        <ProgressBar
+                android:visibility="gone"
+                android:id="@+id/pbWait"
+                android:indeterminate="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/insira_seu_nome"
+                android:inputType="textPersonName"
+                android:id="@+id/etNome"
+                tools:ignore="AutoFill"
+                android:visibility="gone"/>
+
+
+        <com.google.android.material.button.MaterialButton
+                android:layout_marginTop="50dp"
+                android:padding="10dp"
+                app:cornerRadius="100dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/entrar"
+                android:id="@+id/btnRegistrar"
+                android:visibility="gone"
+
+        />
+
+    </LinearLayout>
+</LinearLayout>

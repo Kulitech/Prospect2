@@ -1,0 +1,68 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:id="@+id/txtcalendarTitle"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:textStyle="bold"
+        />
+
+        <com.github.sundeepk.compactcalendarview.CompactCalendarView
+                android:background="@drawable/relatorio_background"
+                android:id="@+id/compactCalendar"
+                android:layout_width="match_parent"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:layout_height="230dp"
+                app:compactCalendarShouldSelectFirstDayOfMonthOnScroll="false"
+                app:compactCalendarCurrentDayTextColor="@color/colorPrimary"
+                app:compactCalendarCurrentDayBackgroundColor="@color/white"
+                app:compactCalendarCurrentSelectedDayBackgroundColor="@color/colorAccent"
+                app:compactCalendarTargetHeight="250dp"
+                app:compactCalendarTextSize="13sp"
+                app:compactCalendarBackgroundColor="@color/colorPrimary"
+                app:compactCalendarMultiEventIndicatorColor="@color/white"
+                app:compactCalendarTextColor="@android:color/white"
+        />
+
+        <ListView
+                android:layout_marginTop="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:dividerHeight="1dp"
+                android:id="@+id/lvTasks"
+        />
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:drawable/ic_input_add"
+            style="@style/Widget.Design.FloatingActionButton"
+            app:backgroundTint="@color/colorAccent"
+            app:layout_anchor="@id/lvTasks"
+            app:layout_anchorGravity="bottom|end"
+            app:elevation="6dp"
+            app:fabSize="normal"
+            app:pressedTranslationZ="12dp"
+            app:tint="@color/white"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="30dp"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

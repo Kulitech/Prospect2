@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/calendario"
+          android:id="@+id/calendarFragment"
+          android:icon="@drawable/ic_calendar"/>
+
+    <item android:title="@string/cliente_plus"
+          android:id="@+id/addClientFragment"
+          android:icon="@drawable/ic_add_client48"/>
+
+    <item android:title="@string/cliente"
+          android:id="@+id/clienteFragment"
+          android:icon="@drawable/ic_clients"/>
+
+</menu>

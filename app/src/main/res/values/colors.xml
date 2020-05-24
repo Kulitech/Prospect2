@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#5C6BC0</color>
+    <color name="colorAccent">#F06292</color>
+
+
+    <color name="dusty">#96858F</color>
+    <color name="lavender">#6D7993</color>
+    <color name="overcast">#9099A2</color>
+    <color name="paper">#D5D5D5</color>
+    <color name="white">#FFFFFF</color>
+    <color name="myBlue">#3F51B5</color>
+    <color name="relat">#3303A9F4</color>
+    <color name="myRoxo">#673AB7</color>
+    <color name="blue">#303F9F</color>
+</resources>
+

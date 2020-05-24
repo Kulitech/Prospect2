@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:background="@drawable/tarefa_background" android:orientation="vertical">
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:id="@+id/llPop"
+            android:layout_height="match_parent">
+        <TextView
+                android:layout_weight="1"
+                android:textStyle="bold|italic"
+                android:textColor="@color/white"
+                android:gravity="center_vertical"
+                android:textSize="15sp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="@string/nome"
+                android:id="@+id/txtClientNome"
+        />
+        <ImageButton
+                android:layout_weight="5"
+                android:id="@+id/ibEdit"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/editar"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        <ImageButton
+                android:layout_weight="5"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/ibRemove"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/editar"
+                android:src="@drawable/ic_remove"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    <LinearLayout
+            android:id="@+id/llHide"
+            android:visibility="gone"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:text="@string/ramo"
+                android:id="@+id/txtClientRamo"
+        />
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:autoLink="phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tel_1"
+                    android:id="@+id/txtClientTel1"
+            />
+
+            <TextView
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:autoLink="phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tel_2"
+                    android:id="@+id/txtClientTel2"
+            />
+
+            <TextView
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:layout_width="match_parent"
+                    android:autoLink="phone"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tel_3"
+                    android:id="@+id/txtClientTel3"
+            />
+        </LinearLayout>
+
+        <TextView
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/email"
+                android:autoLink="email"
+                android:id="@+id/txtClientEmail"
+        />
+
+        <TextView
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/endereco"
+                android:id="@+id/txtClientEndereco"
+        />
+
+        <TextView
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/bairro"
+                android:id="@+id/txtClientBairro"
+        />
+
+        <TextView
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cidade"
+                android:id="@+id/txtClientCidade"
+        />
+
+
+        <TextView
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:layout_marginTop="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/indicacao"
+                android:id="@+id/txtClientIndicacao"
+        />
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cargo"
+                android:id="@+id/txtClientCargo"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+
+        />
+
+        <TextView
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/recebiveis"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+        />
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <CheckBox
+                    android:layout_weight="1"
+                    android:text="@string/dinheiro"
+                    android:textColor="@color/white"
+                    android:buttonTint="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cbClientDinheiro"/>
+
+            <CheckBox
+                    android:layout_weight="1"
+                    android:text="@string/cheque"
+                    android:id="@+id/cbClientCheque"
+                    android:textColor="@color/white"
+                    android:buttonTint="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <CheckBox
+                    android:layout_weight="1"
+                    android:text="@string/duplicata"
+                    android:textColor="@color/white"
+                    android:buttonTint="@color/white"
+                    android:id="@+id/cbClientDuplicata"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            <CheckBox
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    android:buttonTint="@color/white"
+                    android:id="@+id/cbClientCartao"
+                    android:text="@string/cartao"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+
+        <TextView
+                android:layout_marginTop="25dp"
+                android:textColor="@color/white"
+                android:layout_marginBottom="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/porte"
+                android:textSize="15sp"/>
+        <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/myRadioGroup">
+
+            <RadioButton
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/white"
+                    android:buttonTint="@color/white"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rbClientPeq"
+                    android:text="@string/pequeno"/>
+
+            <RadioButton
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/white"
+                    android:buttonTint="@color/white"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rbClientMed"
+                    android:text="@string/medio"/>
+
+            <RadioButton
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    android:buttonTint="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rbClientGrande"
+                    android:text="@string/grande"/>
+
+        </RadioGroup>
+    </LinearLayout>
+
+</LinearLayout>

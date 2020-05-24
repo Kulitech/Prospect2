@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:padding="3dp"
+        android:background="@drawable/single_tarefa_background"
+        android:layout_height="wrap_content">
+    <TextView
+            android:text="@string/p"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:background="@drawable/rounded_view35"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:id="@+id/txtTaskTipo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    <TextView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="15sp"
+            android:text="@string/clientee"
+            android:textAllCaps="true"
+            android:textStyle="bold|italic"
+            android:padding="5dp"
+            android:textColor="@color/white"
+            android:gravity="center_vertical"
+            android:id="@+id/txtTaskItem"
+            android:lines="1"
+            android:layout_marginStart="5dp"
+            />
+
+    <ImageButton
+            android:tint="@color/colorAccent"
+            android:layout_weight="4"
+            android:contentDescription="@string/gerar_relatorio"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_report"
+            android:id="@+id/ibRelatorio"
+    />
+</LinearLayout>
